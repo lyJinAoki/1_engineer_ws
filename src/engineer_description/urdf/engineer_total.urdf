@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="engineer_total">
+  <link
+    name="base_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <link 
+    name="dummy_link">
+    <inertial>
+      <origin
+        xyz="-0.0552622271219548 0.0444814147520001 -7.81107634774748E-17"
+        rpy="1.5708 1.5708 0" />
+      <mass
+        value="3.2867446372736" />
+      <inertia
+        ixx="0.0114500891120678"
+        ixy="8.22904287017107E-07"
+        ixz="-9.44441736188545E-20"
+        iyy="0.0299499157669698"
+        iyz="3.47283508374263E-20"
+        izz="0.0198052903966526" />
+    </inertial>
+  </link>
+  <joint 
+    name="dummy_joint" 
+    type="fixed">
+      <parent
+        link="base_link"/>
+      <child 
+        link="dummy_link"/>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0"/>
+  </joint>
+  <link
+    name="Wheel_l_f">
+    <inertial>
+      <origin
+        xyz="1.4607371478792E-06 -4.56815449774439E-06 0.0141775992518657"
+        rpy="0 0 0" />
+      <mass
+        value="0.218364066959624" />
+      <inertia
+        ixx="0.000104427787761779"
+        ixy="1.46878289660502E-07"
+        ixz="9.84742817310636E-08"
+        iyy="0.000104015431151131"
+        iyz="3.14775163825882E-08"
+        izz="0.000185219071497158" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_l_f.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_l_f.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_l_f_joint"
+    type="continuous">
+    <origin
+      xyz="0.12575 0.012 -0.2366"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_l_f" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_r_f">
+    <inertial>
+      <origin
+        xyz="4.39990510969768E-07 4.78451086770304E-06 -0.0141775992317779"
+        rpy="0 0 0" />
+      <mass
+        value="0.218363813570497" />
+      <inertia
+        ixx="0.000104468389124502"
+        ixy="-4.59887289034618E-08"
+        ixz="1.02958038526021E-07"
+        iyy="0.000103972593641019"
+        iyz="-9.4762911744134E-09"
+        izz="0.000185216828964154" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_r_f.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_r_f.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_r_f_joint"
+    type="continuous">
+    <origin
+      xyz="0.12575 0.012 0.2366"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_r_f" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_l_b">
+    <inertial>
+      <origin
+        xyz="-4.39969836701914E-07 4.78433602500716E-06 0.0141775991371602"
+        rpy="0 0 0" />
+      <mass
+        value="0.218363812750003" />
+      <inertia
+        ixx="0.000104468389521655"
+        ixy="4.59886003902113E-08"
+        ixz="1.02958379094637E-07"
+        iyy="0.000103972590595872"
+        iyz="9.47629434602604E-09"
+        izz="0.000185216826489618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_l_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_l_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_l_b_joint"
+    type="continuous">
+    <origin
+      xyz="-0.23625 0.012 -0.2366"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_l_b" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_r_b">
+    <inertial>
+      <origin
+        xyz="-1.46083406715736E-06 -4.56829479110465E-06 -0.0141775993546685"
+        rpy="0 0 0" />
+      <mass
+        value="0.218364068509747" />
+      <inertia
+        ixx="0.000104427789384888"
+        ixy="-1.46877249475771E-07"
+        ixz="9.84741208542442E-08"
+        iyy="0.000104015432768784"
+        iyz="-3.14773643671457E-08"
+        izz="0.000185219074635221" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_r_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/Wheel_r_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_r_b_joint"
+    type="fixed">
+    <origin
+      xyz="-0.23625 0.012 0.2366"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_r_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="J0">
+    <inertial>
+      <origin
+        xyz="0.0759158274710937 5.50645776162801E-05 0.0321207028795872"
+        rpy="0 0 0" />
+      <mass
+        value="0.826185906731011" />
+      <inertia
+        ixx="0.00124217594899929"
+        ixy="0.000278042793281554"
+        ixz="-0.000103969868513386"
+        iyy="0.00975176084119268"
+        iyz="3.85089928032423E-06"
+        izz="0.0108754766147577" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J0_joint"
+    type="revolute">
+    <origin
+      xyz="-0.055247 0.136 0"
+      rpy="1.5708 0.82967 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="J0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="180"
+      upper="180"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J1">
+    <inertial>
+      <origin
+        xyz="0.00667468426945622 -0.00311169999175029 0.0329941559410919"
+        rpy="0 0 0" />
+      <mass
+        value="0.445157324131475" />
+      <inertia
+        ixx="0.000599119284887685"
+        ixy="7.26291978709103E-05"
+        ixz="-0.00011469855516582"
+        iyy="0.00112284651789171"
+        iyz="2.36772974519472E-05"
+        izz="0.000903006164568879" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1_joint"
+    type="revolute">
+    <origin
+      xyz="0.24987 -0.0082049 0.0451"
+      rpy="0 0 3.0759" />
+    <parent
+      link="J0" />
+    <child
+      link="J1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J2">
+    <inertial>
+      <origin
+        xyz="0.203338043802496 -5.55111512312578E-17 0.0239348929416534"
+        rpy="0 0 0" />
+      <mass
+        value="0.472531146380037" />
+      <inertia
+        ixx="0.000242243029770389"
+        ixy="-1.24852656425284E-18"
+        ixz="-2.15298281011129E-05"
+        iyy="0.00628198170413711"
+        iyz="1.57209315010398E-18"
+        izz="0.00640518112710276" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0016919 -0.058375 0.049"
+      rpy="1.5708 -0.30376 -0.028975" />
+    <parent
+      link="J1" />
+    <child
+      link="J2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="2.20"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J3">
+    <inertial>
+      <origin
+        xyz="0.0252810286652951 0.0539436250554775 0.0536459263115386"
+        rpy="0 0 0" />
+      <mass
+        value="0.554477709500687" />
+      <inertia
+        ixx="0.000565083797174411"
+        ixy="-1.34657373399526E-05"
+        ixz="4.79910714479963E-06"
+        iyy="0.000603777916728215"
+        iyz="-6.50108133131581E-05"
+        izz="0.000889990787632915" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3_joint"
+    type="revolute">
+    <origin
+      xyz="0.38 0 0.00125"
+      rpy="-3.1416 0 -2.1577" />
+    <parent
+      link="J2" />
+    <child
+      link="J3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J4">
+    <inertial>
+      <origin
+        xyz="-0.000293212332543036 -0.00203370221702067 0.112202827111234"
+        rpy="0 0 0" />
+      <mass
+        value="0.418553366604754" />
+      <inertia
+        ixx="0.00113499181892988"
+        ixy="1.30736042003998E-08"
+        ixz="1.69604470784754E-06"
+        iyy="0.00124636479079501"
+        iyz="-7.01899147511362E-07"
+        izz="0.000269442219574954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4_joint"
+    type="revolute">
+    <origin
+      xyz="0.054758 0.15272 0.05965"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="J3" />
+    <child
+      link="J4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J5">
+    <inertial>
+      <origin
+        xyz="2.93266159520633E-05 -0.00389619862479751 0.0452039576715601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0290843688229332" />
+      <inertia
+        ixx="1.47136719297055E-05"
+        ixy="-1.1281250355559E-07"
+        ixz="-1.03040062983849E-08"
+        iyy="1.9152697937006E-05"
+        iyz="4.05679091721863E-07"
+        izz="5.35166523325349E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5_joint"
+    type="revolute">
+    <origin
+      xyz="-0.00023473 0.048 0.24549"
+      rpy="1.5708 0 0" />
+    <parent
+      link="J4" />
+    <child
+      link="J5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J6">
+    <inertial>
+      <origin
+        xyz="-7.30668525683598E-10 4.49967357818437E-09 0.0130419290279963"
+        rpy="0 0 0" />
+      <mass
+        value="0.109728984238603" />
+      <inertia
+        ixx="5.25513685732664E-05"
+        ixy="1.484984396642E-08"
+        ixz="2.15199050121679E-11"
+        iyy="5.24875601792351E-05"
+        iyz="9.09738853133095E-12"
+        izz="5.81346597165958E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/J6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6_joint"
+    type="revolute">
+    <origin
+      xyz="-0.00016514 0.0037607 0.048001"
+      rpy="1.5962 -1.5708 0" />
+    <parent
+      link="J5" />
+    <child
+      link="J6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="end">
+    <inertial>
+      <origin
+        xyz="0 5.55111512312578E-17 -0.00987533603226659"
+        rpy="0 0 0" />
+      <mass
+        value="0.0206537043263427" />
+      <inertia
+        ixx="5.32327748964768E-06"
+        ixy="-1.58818677610181E-21"
+        ixz="-2.11758236813575E-22"
+        iyy="5.32327748964768E-06"
+        iyz="-2.72638729897478E-21"
+        izz="8.28079079337457E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find engineer_description)/meshes/end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.040496"
+      rpy="0 0 0" />
+    <parent
+      link="J6" />
+    <child
+      link="end" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
