@@ -3,7 +3,10 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="engineer_total">
+  name="engineer_total" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+   <xacro:include filename="$(find engineer_description)/urdf/control/engineer.gazebo"/>
+
   <link
     name="base_link">
     <visual>
@@ -259,7 +262,7 @@
   </link>
   <joint
     name="Wheel_r_b_joint"
-    type="fixed">
+    type="continuous">
     <origin
       xyz="-0.23625 0.012 0.2366"
       rpy="0 0 0" />
@@ -268,7 +271,7 @@
     <child
       link="Wheel_r_b" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="J0">
@@ -555,8 +558,8 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-5"
+      upper="5"
       effort="0"
       velocity="0" />
   </joint>
@@ -613,8 +616,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-5"
+      upper="5"
       effort="0"
       velocity="0" />
   </joint>
@@ -671,8 +674,8 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-5"
+      upper="5"
       effort="0"
       velocity="0" />
   </joint>

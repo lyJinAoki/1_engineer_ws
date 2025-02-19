@@ -1,0 +1,45 @@
+[0.013s] Invoking command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ly-jin/Proj/2_engineer_ws/src/engineer_gazebo -DCMAKE_INSTALL_PREFIX=/home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo
+[0.095s] -- The C compiler identification is GNU 13.3.0
+[0.193s] -- The CXX compiler identification is GNU 13.3.0
+[0.224s] -- Detecting C compiler ABI info
+[0.382s] -- Detecting C compiler ABI info - done
+[0.396s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.397s] -- Detecting C compile features
+[0.397s] -- Detecting C compile features - done
+[0.416s] -- Detecting CXX compiler ABI info
+[0.580s] -- Detecting CXX compiler ABI info - done
+[0.595s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.595s] -- Detecting CXX compile features
+[0.596s] -- Detecting CXX compile features - done
+[0.602s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.850s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.023s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.176s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.176s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.177s] -- Added test 'lint_cmake' to check CMake code style
+[1.178s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.180s] -- Added test 'xmllint' to check XML markup files
+[1.182s] -- Configuring done (1.2s)
+[1.186s] -- Generating done (0.0s)
+[1.189s] -- Build files have been written to: /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo
+[1.197s] Invoked command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ly-jin/Proj/2_engineer_ws/src/engineer_gazebo -DCMAKE_INSTALL_PREFIX=/home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo
+[1.198s] Invoking command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo -- -j16 -l16
+[1.261s] Invoked command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo -- -j16 -l16
+[1.264s] Invoking command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo
+[1.276s] -- Install configuration: ""
+[1.276s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/package_run_dependencies/engineer_gazebo
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/parent_prefix_path/engineer_gazebo
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/ament_prefix_path.sh
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/ament_prefix_path.dsv
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/path.sh
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/path.dsv
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.bash
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.sh
+[1.277s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.zsh
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.dsv
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/package.dsv
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/packages/engineer_gazebo
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/cmake/engineer_gazeboConfig.cmake
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/cmake/engineer_gazeboConfig-version.cmake
+[1.278s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/package.xml
+[1.281s] Invoked command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo

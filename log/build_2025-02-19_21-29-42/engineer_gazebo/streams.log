@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo -- -j16 -l16
+[0.068s] Invoked command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo -- -j16 -l16
+[0.069s] Invoking command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo
+[0.082s] -- Install configuration: ""
+[0.082s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/launch
+[0.082s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/launch/world.launch.py
+[0.083s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/launch/spawn_robot.launch.py
+[0.083s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/worlds
+[0.083s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/worlds/empty.sdf
+[0.083s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/package_run_dependencies/engineer_gazebo
+[0.083s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/parent_prefix_path/engineer_gazebo
+[0.084s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/ament_prefix_path.sh
+[0.084s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/ament_prefix_path.dsv
+[0.084s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/path.sh
+[0.084s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/environment/path.dsv
+[0.085s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.bash
+[0.085s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.sh
+[0.085s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.zsh
+[0.085s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/local_setup.dsv
+[0.086s] -- Installing: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/package.dsv
+[0.086s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/ament_index/resource_index/packages/engineer_gazebo
+[0.086s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/cmake/engineer_gazeboConfig.cmake
+[0.086s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/cmake/engineer_gazeboConfig-version.cmake
+[0.087s] -- Up-to-date: /home/ly-jin/Proj/2_engineer_ws/install/engineer_gazebo/share/engineer_gazebo/package.xml
+[0.095s] Invoked command in '/home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ly-jin/Proj/2_engineer_ws/build/engineer_gazebo

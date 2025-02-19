@@ -13,6 +13,7 @@
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/meshes/J4.STL
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/urdf/engineer_total.csv
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/urdf/engineer_total.urdf
+/home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/urdf/control/engineer.gazebo
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/launch/check_urdf.launch.py
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/engineer_description/rviz/engineer_description.rviz
 /home/ly-jin/Proj/2_engineer_ws/install/engineer_description/share/ament_index/resource_index/package_run_dependencies/engineer_description
